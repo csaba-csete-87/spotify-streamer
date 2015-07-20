@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Spotify Streamer</string>
+    <string name="search">Search</string>
+    <string name="search_spotify">Search Spotify</string>
+    <string name="no_top_tracks_for_this_artist">This artist has no top tracks</string>
+    <string name="artist_not_found">Artist not found</string>
+    <string name="list_item_icon">List item icon</string>
+    <string name="loading">Loading</string>
+    <string name="top_10_tracks">Top 10 Tracks</string>
+    <string name="unexpected_network_error">An unexpected error occurred while communicating with the server.</string>
+    <string name="artist_not_found_check_typo">Artist not found. Please check your query for typos, or search another artist.</string>
+    <string name="this_artist_has_no_top_tracks">We do not have any tracks from this artist.</string>
+    <string name="unexpected_error">Oops… An unexpected error has occurred.</string>
+    <string name="no_network_connection">No network connection</string>
+    <string name="unexpected_error_top_tracks">An unexpected error occurred while trying to retrieve this artists top tracks.</string>
+    <string name="title_artist_list">Artists</string>
+    <string name="title_artist_detail">Artist Detail</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="album_art">Album art</string>
+    <string name="previous_track">Previous Track</string>
+    <string name="play_or_pause">Play or Pause</string>
+    <string name="next_track">Next Track</string>
+</resources>

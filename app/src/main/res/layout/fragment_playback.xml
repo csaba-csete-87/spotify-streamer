@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/abc_action_bar_default_height_material"
+    android:paddingLeft="@dimen/abc_action_bar_default_height_material"
+    android:paddingRight="@dimen/abc_action_bar_default_height_material"
+    tools:context="com.csabacsete.spotifystreamer.fragments.PlaybackFragment">
+
+    <TextView
+        android:id="@+id/artist_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="#DD000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/album_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/album_cover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/album_art"
+        android:scaleType="center" />
+
+    <TextView
+        android:id="@+id/track_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="20sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/track_current_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0:00"
+            android:textSize="16sp" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/track_total_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0:30"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Widget.AppCompat.ButtonBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <ImageButton
+            android:id="@+id/previous_track"
+            style="@style/MediaButtonTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/previous_track"
+            android:padding="@dimen/abc_button_inset_vertical_material"
+            android:src="@mipmap/ic_av_skip_previous"
+            android:tint="@color/spotify_green" />
+
+        <ImageButton
+            android:id="@+id/play_pause"
+            style="@android:style/MediaButton.Pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/play_or_pause"
+            android:padding="@dimen/abc_button_inset_vertical_material"
+            android:src="@mipmap/ic_av_play_circle_fill"
+            android:tint="@color/spotify_green" />
+
+        <ImageButton
+            android:id="@+id/next_track"
+            style="@style/MediaButtonTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/next_track"
+            android:padding="@dimen/abc_button_inset_vertical_material"
+            android:src="@mipmap/ic_av_skip_next"
+            android:tint="@color/spotify_green" />
+    </LinearLayout>
+
+</LinearLayout>

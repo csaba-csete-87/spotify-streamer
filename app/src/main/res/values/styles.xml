@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/spotify_green</item>
+        <item name="colorPrimaryDark">@color/spotify_green_dark</item>
+        <item name="colorControlActivated">@color/spotify_green_light</item>
+        <item name="colorControlHighlight">@color/spotify_green</item>
+    </style>
+
+    <style name="MediaButtonTheme">
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+    </style>
+
+</resources>
